@@ -1,0 +1,15 @@
+[package]
+name = "mendokusai"
+version = "0.1.0"
+authors = ["nrskt <norisuke_takafuji@caddi.jp>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde_yaml = "*"
+serde = { version = "*", features = ["derive"] }
+fantoccini = { version = "0.17.4", features = ["rustls-tls"] }
+thiserror = "*"
+tokio = { version = "1", features = ["full"] }
+futures = "*"
